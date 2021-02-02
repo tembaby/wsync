@@ -1,0 +1,35 @@
+- Sat Nov 16 10:15:22 EET 2002 
+-i option to import directory.
+wsync with no param (syncs) only.
+
+(?)
+
+- Mon Jan 20 04:33:40 EET 2003 
+Illegal file names responses from tripod will hang wsync.
+
+(FIXED)
+
+- Mon Jan 20 04:34:08 EET 2003 
+FTP upload meters.
+
+(OK)
+
+- Mon Jan 20 04:34:25 EET 2003 
+Removing temporaries from /tmp races.
+
+(OK)
+
+-  Mon Jan 20 04:36:28 EET 2003 
+I have to catch signals to clean up temporaties.
+
+I do atexit().  Is it safe?  No, but the perms are good anyway.
+
+- Mon Jan 20 04:36:34 EET 2003 
+Temporaries creation perms.
+
+(OK: secure by default)
+
+- Mon Jan 20 11:55:01 EET 2003 
+environment variable for debugging.
+
+(OK)

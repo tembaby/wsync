@@ -1,0 +1,15 @@
+# $Id$
+# /usr/ccs/bin/make
+
+OBJS		= solaris/err.o solaris/fgetln.o solaris/fparseln.o main.o strlib.o \
+		  fsops.o edit.o html_dir.o
+TARGET		= wsync
+DEBUG 		=
+UCFLAGS 	= -Isolaris -DUNIX -DUSE_MMAP -DDEBUG -Wmissing-prototypes
+INSTALLDIR	= /home/te/bin
+TARBALL		= wsync.tar.gz
+HDRDEP		= wsync.h
+XLIBS		= -L. -lftp -lsocket -lnsl
+CLEAN_EXTRA	= solaris/*.o
+
+include solaris.prog.c.mk
